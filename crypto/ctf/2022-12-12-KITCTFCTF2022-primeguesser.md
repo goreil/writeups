@@ -14,6 +14,7 @@ The Challenge server employed a custom polynomial based encryption protocol. The
 Between each encrypted number you can query an oracle any times you want that returns `True` or `False` whether a ciphertext corresponds to the plaintext 0. In `PrimeGuesser 1` you also have access to an oracle that will encrypt the number 1 - 20.
 
 You need to send back the correct factors 100 times to get the flag.
+
 ![Alt text](q6o31e29.bmp)
 
 
