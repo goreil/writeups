@@ -82,8 +82,6 @@ Failed to unseal the data blob.
 This part was written by another author and is availabe in the full writeup here:
 https://saarsec.rocks/2023/01/08/REALWORLDCTF5-SealUnseal.html
 
-#### Note
-As we found out afterwards, in general, chip (as in, the physical piece of silicon you own) specific secrets seem to be used in the key derivation process, which means even if we found a suitable platform, it's possible that we would have been unable to decrypt the secret. Having said that, the organizers deployed two different VMs in two different regions but with the same sealed blob file, which would be a strong indicator that different dies can derive the same keys without chip specific secrets involved; however this may also be an artifact of the virtialization setup involved. We're honestly not sure, and it doesn't help that Intel's documentation on these things is difficult to read at best and simply nonexistent at worst. 
 
 ### Final solve
 
